@@ -1,0 +1,100 @@
+
+.shadow-bump {
+    box-shadow:  5px 5px 9px #c9c9c9, 
+                -5px -5px 9px #ffffff;
+}
+.shadow-dent {
+    box-shadow: inset 5px 5px 9px #c9c9c9, 
+                inset -5px -5px 9px #ffffff;
+}
+.shadow-border {
+    box-shadow:5px 5px 9px #c9c9c9, -5px -5px 9px #ffffff,
+    inset 5px 5px 9px #c9c9c9,inset -5px -5px 9px #ffffff;
+}
+
+$btn-width: 200px;
+.el_btn {
+    @extend .shadow-bump;
+    display: inline-block;
+    width: $btn-width;
+    max-width: 100%;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    padding: 20px 10px;
+    border: 2px solid transparent;
+    font-size: 1.125rem;
+    text-align: center;
+    transition: .25s;
+    border-radius:calc(#{$btn-width}/20);
+    background: #efefef;
+    &.el_btn-hover {
+        &:focus,
+        &:hover{
+            @extend .shadow-dent;
+        }
+    }
+    @include media(){
+        display: block;
+        width:100%;
+        
+    }
+    nav & {
+        width:100px;
+        padding: 5px 5px;
+
+        @include media(){
+            width: 100%;
+        }
+    }
+}
+
+.navbar-toggler {
+    @extend .shadow-bump;
+    &:focus,
+    &:hover {
+        @extend .shadow-dent;
+    }
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'
+    xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)'
+    stroke-width='3' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");    
+}
+
+
+.contact {
+    padding:150px 30px;
+    background-color: #383634;
+}
+.contacts-wrapper {
+    display: table;
+    width:80%;
+    margin:50px auto 0;
+    table-layout: fixed;
+}
+.contact-icon {
+    display: table-cell;
+    width:120px;
+    height:120px;
+    margin: 30px;
+    border: 4px;
+    border-radius: 50%;
+    color:#777;
+    font-size: 5.5rem;
+    text-align: center;
+    vertical-align: middle;
+    padding-top:18px;
+    box-shadow:
+    10px 10px 10px #c9c9c9,
+    -10px -10px 10px #fff,
+    inset 10px 10px 10px transparent,
+    inset -10px -10px 10px transparent;
+    &:focus,
+    &:hover {
+        box-shadow:
+        10px 10px 10px transparent,
+        -10px -10px 10px transparent,
+        inset 10px 10px 10px #c9c9c9,
+        inset -10px -10px 10px #fff;
+    }   
+}
