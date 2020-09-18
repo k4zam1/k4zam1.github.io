@@ -36,12 +36,20 @@
 </template>
 
 <script>
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'jquery/dist/jquery.slim.min.js'
+import 'popper.js/dist/umd/popper.min.js'
+import 'bootstrap/dist/js/bootstrap.min.js'
+
 import Navigation from './components/Navigation.vue'
 import Footer from './components/Footer.vue'
 import Jumbotron from './components/Jumbotron.vue'
 import Media from './components/Media.vue'
 import Card from './components/Card.vue'
 import Contact from './components/Contact.vue'
+
+
 export default {
   name: 'App',
   components: {
@@ -54,3 +62,25 @@ export default {
   },
 }
 </script>
+
+<style>
+@charset "UTF-8";
+body {
+    color:#343;
+    font-family:sans-serif;
+    line-height:1.5;
+    background-color: #efefef;
+}
+a {
+    color:#777;
+    text-decoration: none;
+}
+a:hover {
+    color:currentColor;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+</style>

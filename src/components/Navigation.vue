@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-md mb-5">
+    <nav class="navbar navbar-expand-md navbar-light mb-5">
         <!-- 画面幅sm以下では折りたたみ,md以上では広げて表示 -->
         <div class="container">
             <!-- ハンバーガーボタン -->
