@@ -8,13 +8,8 @@
             </button>
             <!-- ナビゲーション -->
             <div class="collapse navbar-collapse" id="navbar-content">
-                <!-- サイズsm以下では折りたたまれてハンバーガーボタンから参照される -->
-                <!-- 左側メニュー: 各コンテンツへのリンク-->
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Top</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item" v-for="menu in menus" :key="menu.title"><a class="nav-link" :href="menu.link">{{ menu.title }}</a></li>
                 </ul>
             </div>
         </div>
@@ -23,6 +18,16 @@
 
 <script>
 export default {
-  name: 'Navigation'
+  name: 'Navigation',
+  data:function(){
+      return {
+        menus : [
+            {link:"#",title:"Top"},
+            {link:"#about",title:"About"},
+            {link:"#work",title:"Work"},
+            {link:"#contact",title:"Contact"}
+        ]
+      }
+  }
 }
 </script>
