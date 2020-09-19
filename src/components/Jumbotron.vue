@@ -32,34 +32,16 @@ export default {
 }
 h1 {
     margin: 0;
-    font-size: 20vw;
+    font-size: 15vw;
     font-family: "Decovar Regular24"; 
     color: white; 
-    
     font-variation-settings: 'SSTR' 1000;
     animation: loadin 4s infinite linear;
 }
 #top{
     height: 80vh;
 }
-.el_jumbotron {
-    margin:50px 0 40px;
-    font-size:10vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transform: translateZ(0);
-    text-shadow: 
-        -1px -1px 0 rgba(255, 255, 255, .7),
-        1px -1px 0 rgba(255, 255, 255, .7), 
-        -1px 1px 0 rgba(255, 255, 255, .7), 
-        1px 1px 0 rgba(255, 255, 255, .7), 
-        -1px 2px 1px #a0a0a0,
-        -2px 4px 2px #a0a0a0,
-        -3px 6px 3px rgba(#a0a0a0, 0.6),
-        -4px 8px 4px rgba(#a0a0a0, 0.5);
-}
+
 .el_desc {
     margin-bottom:50px;
     color:#aaa;
