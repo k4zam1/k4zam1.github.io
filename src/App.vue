@@ -4,29 +4,54 @@
   <main>
     <article>
       <Jumbotron title="Portfolio" desc="
-        I'm a student studying CS in Japan.<br/>This is my portfolio :)"/>
+        Welcome :)"/>
       <section class="container mb-5" id="about">
         <Media dent="True" imgpath="img/analyst.svg" title="about me" txt="
-          my major is computational complexity. especially i am doing research on decision trees and decision lists.
-          so i'm recently interested in data science.<br/>
-          now i'm studying causal reasoning, time series analysis, Bayesian modeling, deep learning, etc.<br/>
+          <ul>
+            <li>2016年 山形大学システム創成工学科入学</li>
+            <li>2020年 山形大学理工学研究科情報科学専攻(修士)入学</li>
+            <li>2022年 山形大学理工学研究科情報科学専攻(修士)卒業予定</li>
+          </ul>
+          <b>専門について</b><br/>
+          専門は計算複雑性理論で、決定木の計算能力について研究していました。現在は研究の延長で機械学習やデータサイエンス系のプログラムを書くことが多いです。<br/><br/>
+
+          <b>データサイエンス x データビジュアライゼーション</b><br/>
+          私はデータを可視化し伝えることに関心があります。データの可視化は、データが潜在的に持っていた構造を直感的に教えてくれます。
+          しかし誤った可視化は誤った構造を伝えてしまうことがあります。私はこうした危険に対処するために統計学やデータ分析の知識が必須であると考えています。<br/><br/>
+
+          <b>データサイエンス x セキュリティ</b><br/>
+          企業が大量の個人データを保管するようになった現在では、一層セキュリティに注意を払う必要があると考えます。
+          セキュリティとデータサイエンスを合わせることで、こうした問題を改善できるのではないかと考えています。
         "/>
-        <Media dent="True" imgpath="img/storage.svg" title="skills" reverse="True" txt="
-          Python/R/JavaScript<br/>
-          DataScience/DataVisualization
+        <Media dent="True" imgpath="img/storage.svg" title="skills" txt="
+          <ul>
+            <li>Python</li>
+            使用歴:4年、実務経験:あり<br/>
+
+            <br/>
+
+            <li>R</li>
+            使用歴:2年、実務経験:なし<br/>
+            <br/>
+            <li>JavaScript</li>
+            使用歴:3年、実務経験:あり<br/>
+
+          </ul>
         "/>
       </section>
       <section class="container mb-5" id="work">
         <div class="bl_cardUnit bl_cardUnit__col3">
-          <Card imgpath="https://user-images.githubusercontent.com/56730772/88771210-dfac7e00-d1b9-11ea-8db5-5858a27850e2.png" title="Nobel Winners Visualization" txt='
-             This is my first visualization project.This project is originally by <a href="https://github.com/Kyrand/dataviz-with-python-and-js">Kyrand</a>
-             But it did not work because time passed so I repaired it.<br/>
+          <Card imgpath="https://user-images.githubusercontent.com/56730772/88771210-dfac7e00-d1b9-11ea-8db5-5858a27850e2.png" title="ノーベル賞受賞者の可視化" txt='
+             使用言語：Python,JS<br/>Wikipediaからスクレイピングしたノーベル賞受賞者のデータを可視化しました。スクレイピングにはscrapyを使い、データの保管にはpymongoを利用しています。
+             pymongoからflaskを使ってデータを配信するRestfulAPIを作成し、d3.jsでデータを可視化しています。
              <center><a href="https://github.com/k4zam1/novel-winners-visualization">LEARN MORE</a></center> '/>
-          <Card imgpath="img/coding.svg" title="furusato viz" txt="
-            This is a visualization project about hometown tax(Furusato nozei)<br/><br/>
-            <center>comming soon...</center>"/>
-          <Card imgpath="img/coding.svg" title="comming soon..." txt="
-            comming soon..."/>
+          <Card imgpath="img/city-viz.png" title="米沢市循環バス情報" txt='
+            使用言語：JS<br/>
+            米沢市の循環バスがいまどこらへんにいるのかを可視化しました。データの可視化にはLeaflet.jsを使っています。
+            <center><a href="https://k4zam1.github.io/city-viz/">LEARN MORE</a></center>'/>
+          <Card imgpath="img/dashboard.png" title="ダッシュボード" txt='
+            使用言語：R,JS,CSS<br/>ブラウザ上でインタラクティブにデータを可視化するダッシュボードです
+            <center><a href="https://k4zam1.shinyapps.io/Dashboard">LEARN MORE</a></center>' />
         </div>
       </section>
       <Contact/>
