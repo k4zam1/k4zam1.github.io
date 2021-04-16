@@ -2,7 +2,7 @@
     <footer>
         <div class="ly_footer">
             <div class="ly_footer_inner">
-                <small class="el_footerCopyright">(C)2020 hassy. All rights reserved.</small>
+                <small class="el_footerCopyright">(C)2021 k4zam1 All rights reserved.</small>
             </div>
         </div>
     </footer>
